@@ -1,0 +1,214 @@
+body {
+    background-color: #a2a9af;
+    margin: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold; /* Corrected from 'font: bold;' */
+    line-height: 1.6;
+}
+
+#title {
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 5px 5px 10px #888; /* Gray shadow for better readability */
+    color: #003366; /* Dark blue color for the title */
+    font-size: 7vh;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tribute-image {
+    display: inline-block;
+    width: 80%;
+    max-width: 480px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#caption {
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+hr {
+    height: 5px;
+    background-color: #003366;
+}
+
+.tribute-data {
+    background-color: #add8e680;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Georgia, serif;
+    padding: 25px;
+    margin: 11px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.title-APJ {
+    font-size: 35px;
+    color: #003366;
+    text-align: center;
+    text-shadow: 5px 5px 10px #888;
+} 
+
+.description {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.8;
+}
+
+.sub-section-title {
+    font-size: 1.5em;
+    color: #003366;
+}
+
+.achievements {
+    list-style-type: none;
+    padding: 2px;
+}
+
+.achievements li {
+    list-style: circle;
+    margin-bottom: 10px;
+}
+
+.wind {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.wind figure {
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+.achievement-image {
+    display: inline-block;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wind figcaption {
+    margin-top: 5px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+#yuno-databook {
+    letter-spacing: 1px;
+    width:100% ;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid #003366;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#yuno-card {
+    letter-spacing: 1px;
+    width:100% ;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid #003366;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#yuno-databook td, #yuno-databook th, #yuno-card td, #yuno-card th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#yuno-databook tr:nth-child(even), #yuno-card tr:nth-child(even) {
+    background-color: #e6f2ff;
+}
+
+#yuno-databook tr:hover, #yuno-card tr:hover {
+    background-color: #ccd9ff;
+}
+
+#yuno-databook th, #yuno-card th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #003366;
+    color: white;
+}
+
+.four-leaf {
+    float: right;
+    margin: 0 0 10px 10px;
+    width: 30%;
+    max-width: 150px;
+}
+
+.four-leaf figcaption {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+.four-leaf {
+    float: right;
+    margin: 0  0 10px 10px;
+    width: 30%; /* Relative width */
+    max-width: 197px; /* Ensure it doesn't exceed the original maximum width */
+    aspect-ratio: 197 / 255; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Add some styling */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better presentation */
+}
+
+.four-leaf img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+}
+
+.four-leaf figcaption {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+.star-grimoire {
+    float: right;
+    margin: 0 0 10px 10px;
+    width: 30%;
+    max-width: 200px;
+}
+
+.star-grimoire figcaption {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+#tribute-link, .developer-link {
+    text-decoration: none;
+    color: #003366;
+    font-style: italic;
+}
+
+#tribute-link:hover, .developer-link:hover {
+    text-decoration: underline;
+}
