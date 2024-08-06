@@ -1,18 +1,17 @@
-/* General Styles */
 body {
     background-color: #a2a9af;
     margin: 5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: oblique;
-    font-weight: bold;
+    font-weight: bold; /* Corrected from 'font: bold;' */
     line-height: 1.6;
 }
 
 #title {
     text-align: center;
     text-decoration: underline;
-    text-shadow: 5px 5px 10px #888;
-    color: #003366;
+    text-shadow: 5px 5px 10px #888; /* Gray shadow for better readability */
+    color: #003366; /* Dark blue color for the title */
     font-size: 7vh;
 }
 
@@ -57,7 +56,7 @@ hr {
     color: #003366;
     text-align: center;
     text-shadow: 5px 5px 10px #888;
-}
+} 
 
 .description {
     font-size: 1em;
@@ -107,53 +106,43 @@ hr {
     color: #333;
 }
 
-#yuno-databook, #yuno-card {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 2px solid #003366;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #f0f8ff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.stat-tables {
+    margin-bottom: 20px; /* Add space below each stat table */
+    overflow-x: auto; /* Make the container scrollable horizontally if needed */
 }
 
-#yuno-databook td, #yuno-databook th, #yuno-card td, #yuno-card th {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
+.stat-tables table {
+    width: 100%; /* Ensure the table takes up the full width of the container */
+    border-collapse: collapse; /* Ensure borders are collapsed */
+    table-layout: auto; /* Allow the table layout to adjust based on content */
 }
 
-#yuno-databook th, #yuno-card th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background-color: #003366;
-    color: white;
+.stat-tables th, .stat-tables td {
+    border: 1px solid #ddd; /* Add border to table cells */
+    padding: 8px; /* Add padding to table cells */
+    text-align: left; /* Align text to the left */
 }
 
-#yuno-databook tr:nth-child(even), #yuno-card tr:nth-child(even) {
-    background-color: #e6f2ff;
+.stat-tables tr:nth-child(even) {
+    background-color: #e6f2ff; /* Background color for even rows */
 }
 
-#yuno-databook tr:hover, #yuno-card tr:hover {
-    background-color: #ccd9ff;
+.stat-tables tr:hover {
+    background-color: #ccd9ff; /* Background color for rows on hover */
+}
+
+.stat-tables th {
+    padding-top: 12px; /* Add padding to the top of table headers */
+    padding-bottom: 12px; /* Add padding to the bottom of table headers */
+    background-color: #003366; /* Background color for table headers */
+    color: white; /* Text color for table headers */
 }
 
 .four-leaf {
     float: right;
     margin: 0 0 10px 10px;
     width: 30%;
-    max-width: 197px;
-    aspect-ratio: 197 / 255;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.four-leaf img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 150px;
 }
 
 .four-leaf figcaption {
@@ -163,7 +152,30 @@ hr {
     font-family: 'Times New Roman', Times, serif;
     color: #333;
 }
+.four-leaf {
+    float: right;
+    margin: 0  0 10px 10px;
+    width: 30%; /* Relative width */
+    max-width: 197px; /* Ensure it doesn't exceed the original maximum width */
+    aspect-ratio: 197 / 255; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Add some styling */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for better presentation */
+}
 
+.four-leaf img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+}
+
+.four-leaf figcaption {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
 .star-grimoire {
     float: right;
     margin: 0 0 10px 10px;
@@ -187,36 +199,4 @@ hr {
 
 #tribute-link:hover, .developer-link:hover {
     text-decoration: underline;
-}
-
-/* Horizontal Tables */
-.stat-tables {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.stat-tables table {
-    width: 48%;
-    border-collapse: collapse;
-    margin: 10px 0;
-}
-
-.stat-tables th, .stat-tables td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-
-.stat-tables th {
-    background-color: #003366;
-    color: white;
-}
-
-.stat-tables tr:nth-child(even) {
-    background-color: #e6f2ff;
-}
-
-.stat-tables tr:hover {
-    background-color: #ccd9ff;
 }
