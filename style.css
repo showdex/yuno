@@ -3,15 +3,15 @@ body {
     margin: 5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: oblique;
-    font-weight: bold; /* Corrected from 'font: bold;' */
+    font-weight: bold;
     line-height: 1.6;
 }
 
 #title {
     text-align: center;
     text-decoration: underline;
-    text-shadow: 5px 5px 10px #888; /* Gray shadow for better readability */
-    color: #003366; /* Dark blue color for the title */
+    text-shadow: 5px 5px 10px #888;
+    color: #003366; 
     font-size: 7vh;
 }
 
